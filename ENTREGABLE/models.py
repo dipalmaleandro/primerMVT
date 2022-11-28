@@ -6,7 +6,7 @@ class Integrante (models.Model):
     apellido=models.CharField(max_length=250)
     edad=models.IntegerField()
     ocupacion=models.CharField(max_length=250)
-    diadenacimiento=models.DateField()
+    diadenacimiento=models.DateField(null=True)
     def __str__(self):
         return self.nombre+" "+self.apellido+" "+self.edad+" "+self.ocupacion+" "+self.diadenacimiento
 
